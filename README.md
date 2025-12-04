@@ -12,9 +12,6 @@
 >
 > 本项目无盈利内容！！！全部代码和音频都会开源！！！所有相关版权归属Project Moon和声优本人所有！！！
 
-### 项目仓库：
-
-::github{repo="L-Corporation/Lobotomy-Corporation-Dub-Mod"}
 
 ---
 
