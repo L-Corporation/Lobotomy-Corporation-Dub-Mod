@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props"
+            Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')"/>
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{D6AE4C0B-11D9-49CD-87EA-DBF9F77E1BF7}</ProjectGuid>
+        <OutputType>Library</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace>ClassLibrary4</RootNamespace>
+        <AssemblyName>ClassLibrary4</AssemblyName>
+        <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+        <FileAlignment>512</FileAlignment>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="0Harmony">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\MelonLoader\net35\0Harmony.dll</HintPath>
+        </Reference>
+        <Reference Include="Assembly-CSharp">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\Assembly-CSharp.dll</HintPath>
+        </Reference>
+        <Reference Include="Assembly-CSharp-firstpass">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+        </Reference>
+        <Reference Include="AssetRipper.Primitives">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\MelonLoader\net35\AssetRipper.Primitives.dll</HintPath>
+        </Reference>
+        <Reference Include="AssetsTools.NET">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\MelonLoader\net35\AssetsTools.NET.dll</HintPath>
+        </Reference>
+        <Reference Include="bHapticsLib">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\MelonLoader\net35\bHapticsLib.dll</HintPath>
+        </Reference>
+        <Reference Include="IndexRange">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\MelonLoader\net35\IndexRange.dll</HintPath>
+        </Reference>
+        <Reference Include="MelonLoader">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\MelonLoader\net35\MelonLoader.dll</HintPath>
+        </Reference>
+        <Reference Include="Mono.Cecil">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\MelonLoader\net35\Mono.Cecil.dll</HintPath>
+        </Reference>
+        <Reference Include="Mono.Cecil.Mdb">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\MelonLoader\net35\Mono.Cecil.Mdb.dll</HintPath>
+        </Reference>
+        <Reference Include="Mono.Cecil.Pdb">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\MelonLoader\net35\Mono.Cecil.Pdb.dll</HintPath>
+        </Reference>
+        <Reference Include="Mono.Cecil.Rocks">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\MelonLoader\net35\Mono.Cecil.Rocks.dll</HintPath>
+        </Reference>
+        <Reference Include="Mono.Security">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\Mono.Security.dll</HintPath>
+        </Reference>
+        <Reference Include="MonoMod.RuntimeDetour">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\MelonLoader\net35\MonoMod.RuntimeDetour.dll</HintPath>
+        </Reference>
+        <Reference Include="MonoMod.Utils">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\MelonLoader\net35\MonoMod.Utils.dll</HintPath>
+        </Reference>
+        <Reference Include="mscorlib">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\mscorlib.dll</HintPath>
+        </Reference>
+        <Reference Include="Newtonsoft.Json">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\MelonLoader\net35\Newtonsoft.Json.dll</HintPath>
+        </Reference>
+        <Reference Include="System" />
+        <Reference Include="System.Core" />
+        <Reference Include="System.Data" />
+        <Reference Include="System.Xml" />
+        <Reference Include="Tomlet">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\MelonLoader\net35\Tomlet.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.AccessibilityModule">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.AccessibilityModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.AIModule">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.AIModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.AnimationModule">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.AnimationModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.ARModule">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.ARModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.AssetBundleModule">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.AudioModule">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.AudioModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.ClothModule">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.ClothModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.ClusterInputModule">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.ClusterInputModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.ClusterRendererModule">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.ClusterRendererModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.CoreModule">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.CrashReportingModule">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.CrashReportingModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.DirectorModule">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.DirectorModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.GameCenterModule">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.GameCenterModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.GridModule">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.GridModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.ImageConversionModule">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.IMGUIModule">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.InputModule">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.InputModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.JSONSerializeModule">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.JSONSerializeModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.Networking">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.Networking.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.ParticlesLegacyModule">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.ParticlesLegacyModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.ParticleSystemModule">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.ParticleSystemModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.PerformanceReportingModule">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.PerformanceReportingModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.Physics2DModule">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.Physics2DModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.PhysicsModule">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.ScreenCaptureModule">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.ScreenCaptureModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.SharedInternalsModule">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.SharedInternalsModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.SpatialTracking">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.SpatialTracking.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.SpriteMaskModule">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.SpriteMaskModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.SpriteShapeModule">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.SpriteShapeModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.StandardEvents">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.StandardEvents.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.StyleSheetsModule">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.StyleSheetsModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.TerrainModule">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.TerrainModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.TerrainPhysicsModule">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.TextRenderingModule">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.TilemapModule">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.TilemapModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.Timeline">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.Timeline.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UI">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.UI.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UIElementsModule">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.UIElementsModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UIModule">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.UIModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UNETModule">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.UNETModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UnityAnalyticsModule">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UnityConnectModule">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.UnityConnectModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UnityWebRequestModule">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.UnityWebRequestModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.VehiclesModule">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.VehiclesModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.VideoModule">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.VideoModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.VRModule">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.VRModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.WebModule">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.WebModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.WindModule">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\LobotomyCorp_Data\Managed\UnityEngine.WindModule.dll</HintPath>
+        </Reference>
+        <Reference Include="ValueTupleBridge">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\MelonLoader\net35\ValueTupleBridge.dll</HintPath>
+        </Reference>
+        <Reference Include="WebSocketDotNet">
+          <HintPath>E:\steam\steamapps\common\LobotomyCorp\MelonLoader\net35\WebSocketDotNet.dll</HintPath>
+        </Reference>
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Class1.cs"/>
+        <Compile Include="Properties\AssemblyInfo.cs"/>
+    </ItemGroup>
+    <Target Name="CopyFileAfterBuild" AfterTargets="Build">
+        <PropertyGroup>
+            <SourcePath>$(ProjectDir)bin\Debug\ClassLibrary4.dll</SourcePath>
+            <TargetPath>E:\steam\steamapps\common\LobotomyCorp\Mods\LCorp_Dub.dll</TargetPath>
+        </PropertyGroup>
+        <Exec Command="copy &quot;$(SourcePath)&quot; &quot;$(TargetPath)&quot; /Y"/>
+    </Target>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
+    <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+         Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+    -->
+
+</Project>
